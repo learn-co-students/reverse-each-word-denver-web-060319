@@ -1,23 +1,24 @@
 def reverse_each_word(string)
+
   array = string.split(" ")
 
-  empty_string = []
+  each_el_rev = array.collect {|element| element.reverse}
 
-  array.each do |element|
-    empty_string.push(element.reverse)
-  end
-
-  return empty_string.join(" ")
+  each_el_rev.join(" ")
 
 end
 
-#### BELOW IS THE COMMENTED OUT VERSION OF THE ABOVE USING .collect
-#### IT PASSED THE LEARN TEST.
+
 
 #def reverse_each_word(string)
-
   #array = string.split(" ")
-  #array.collect do |element|
-    #element.reverse
+
+  #empty_string = []
+
+  #array.each do |element|
+  #  empty_string.push(element.reverse)
   #end
+
+  #return empty_string.join(" ")
+
 #end
